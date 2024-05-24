@@ -67,6 +67,10 @@ def registro():
 def contexto():
     return render_template('contexto.html')
 
+@app.route('/EstudianteDashboard')
+def estudianteDashboard():
+    return render_template('estudiante_dashboard.html')
+
 if __name__ == '__main__':
     with app.app_context():
         init_db()
