@@ -1,0 +1,42 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #FAF5F0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.context-container {
+    width: 80%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.student-image {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.context-text {
+    width: 40%;
+    text-align: left;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+p {
+    font-size: 25px;
+}
+
+.highlight {
+    font-weight: bold; /* Hace que el texto sea negrita */
+}

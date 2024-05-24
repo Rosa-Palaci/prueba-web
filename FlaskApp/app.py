@@ -42,8 +42,7 @@ def registro():
 
 @app.route('/Contexto')
 def contexto():
-    # Esta vista podría ser para mostrar información relevante
-    return 'Información del contexto escolar aquí'
+    return render_template('contexto.html')
 
 if __name__ == '__main__':
     db.create_all(app=app)
