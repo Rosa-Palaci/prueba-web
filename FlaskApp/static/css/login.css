@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px;
+    margin: 0%;
+}
+
+.login-image, .login-form {
+    flex: 1;
+}
+
+.login-image {
+    margin-right: 50px; 
+}
+
+img.img-fluid {
+    max-width: 30%;
+    height: auto;
+    border-radius: 10%;
+}
+
+

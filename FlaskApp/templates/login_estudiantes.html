@@ -3,9 +3,13 @@
 {% block title %}Inicio de sesión para Estudiantes{% endblock %}
 
 {% block content %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+
 <div class="container mt-5">
-    <h2 class="text-center mb-4">Inicio de sesión para Estudiantes</h2>
+    <img src="{{ url_for('static', filename='images/img-dashboard.jpg') }}" alt="dashboard-student" class="img-fluid">
+    
     <form action="/EstudiantesDashboard" method="post" class="form">
+        <h2 class="text-center mb-4">Inicio de sesión para Estudiantes</h2>
         <div class="mb-3">
             <input type="text" class="form-control" id="numero_lista" name="numero_lista" placeholder="Ingresa tu número de lista" required>
         </div>
