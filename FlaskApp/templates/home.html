@@ -1,29 +1,19 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Escuela Metropolitana</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
-</head>
-<body>
-    {% extends 'navbar.html' %}
+{% extends 'navbar.html' %}
 
+{% block title %}Escuela Metropolitana - Inicio{% endblock %}
 
-    <div class="container-fluid bg-light p-5 text-center">
-        <div class="row justify-content-center">
-            <div class="col-md-6 text-start">
-                <h1>Escuela Metropolitana</h1>
-                <p>Fundada en 1934, esta institución se encuentra entre las 100 mejores primarias de la Ciudad de México. Además, ha obtenido el primer lugar de la zona en la Olimpiada de Conocimiento Infantil, destacando su excelencia académica y compromiso con la educación.</p>
-                <a href="/LoginEstudiantes" class="btn btn-success m-1" role="button">Estudiante</a>
-                <a href="/LoginProfesores" class="btn btn-primary m-1" role="button">Profesor</a>
-            </div>
-            <div class="col-md-4">
-                <img src="{{ url_for('static', filename='images/estudiante-home.png') }}" alt="Estudiante" class="img-fluid rounded-circle">
-            </div>
+{% block content %}
+<div class="container-fluid bg-light p-5 text-center">
+    <div class="row justify-content-center">
+        <div class="col-md-6 text-start">
+            <h1>Escuela Metropolitana</h1>
+            <p>Fundada en 1934, esta institución se encuentra entre las 100 mejores primarias de la Ciudad de México. Además, ha obtenido el primer lugar de la zona en la Olimpiada de Conocimiento Infantil, destacando su excelencia académica y compromiso con la educación.</p>
+            <a href="/LoginEstudiantes" class="btn btn-success m-1" role="button">Estudiante</a>
+            <a href="/LoginProfesores" class="btn btn-primary m-1" role="button">Profesor</a>
+        </div>
+        <div class="col-md-4">
+            <img src="{{ url_for('static', filename='images/estudiante-home.png') }}" alt="Estudiante" class="img-fluid rounded-circle">
         </div>
     </div>
-    
-</body>
-</html>
+</div>
+{% endblock %}
