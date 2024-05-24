@@ -1,0 +1,36 @@
+{% extends 'navbar.html' %}
+
+{% block title %}Registro para Estudiantes{% endblock %}
+
+{% block content %}
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Registro para Estudiantes</h2>
+    <form action="/Registro" method="post" class="form">
+        <div class="mb-3">
+            <input type="text" class="form-control" id="numero_lista" name="numero_lista" placeholder="Ingresa tu número de lista" required>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" id="grupo" name="grupo" required>
+                <option selected disabled>Selecciona tu grupo</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <select class="form-select" id="genero" name="genero" required>
+                <option selected disabled>Selecciona tu género</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <input type="text" class="form-control" id="ciclo_escolar" name="ciclo_escolar" placeholder="Ingresa Ciclo Escolar" required>
+        </div>
+        <div class="d-grid">
+            <button type="submit" class="btn btn-success btn-lg">Registrar</button>
+        </div>
+    </form>
+</div>
+{% endblock %}
