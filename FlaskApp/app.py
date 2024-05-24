@@ -11,12 +11,12 @@ db.init_app(app)
 def home():
     return render_template('home.html')
 
-@app.route('/LoginEstudiante', methods=['GET', 'POST'])
+@app.route('/LoginEstudiantes', methods=['GET', 'POST'])
 def login_estudiante():
     if request.method == 'POST':
         # Aquí manejarías la autenticación
         pass
-    return render_template('login_estudiante.html')
+    return render_template('login_estudiantes.html')
 
 @app.route('/LoginProfesores', methods=['GET', 'POST'])
 def login_profesores():
